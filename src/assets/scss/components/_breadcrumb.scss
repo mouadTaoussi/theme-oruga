@@ -1,0 +1,140 @@
+@use "sass:list";
+
+/* @docs */
+$breadcrumb-color: black !default;
+$breadcrumb-font-weight: 400 !default;
+$breadcrumb-line-height: $base-line-height !default;
+// $breadcrumb-margin-icon-to-text: 0.1875em !default;
+$breadcrumb-margin: 0 !default;
+$breadcrumb-item-margin: 5px !default;
+$breadcrumb-item-icon-margin: 2px !default;
+$breadcrumb-disabled-opacity: $base-disabled-opacity !default;
+/* @docs */
+
+// router-link-active router-link-exact-active
+// ██████╗░██████╗░███████╗░█████╗░██████╗░░█████╗░██████╗░██╗░░░██╗███╗░░░███╗██████╗░
+// ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░░░██║████╗░████║██╔══██╗
+// ██████╦╝██████╔╝█████╗░░███████║██║░░██║██║░░╚═╝██████╔╝██║░░░██║██╔████╔██║██████╦╝
+// ██╔══██╗██╔══██╗██╔══╝░░██╔══██║██║░░██║██║░░██╗██╔══██╗██║░░░██║██║╚██╔╝██║██╔══██╗
+// ██████╦╝██║░░██║███████╗██║░░██║██████╔╝╚█████╔╝██║░░██║╚██████╔╝██║░╚═╝░██║██████╦╝
+// ╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝░░░░░╚═╝╚═════╝░
+
+
+/// Assigns a specific variable to an attribute
+///
+/// @param {string} $attribute
+///   The attribute we want to include
+/// @param {string} $name
+///   Variable name
+/// @param {string} $value
+///   Variable value
+@mixin avariable($attribute, $name, $value) {
+    $variable: variable($name, $value);
+    @if $variable {
+      #{$attribute}: $variable;
+    }
+  }
+
+.o-breadcrumb { 
+	display: flex;
+	// background-color: red;
+	
+	.o-breadcrumb-item {
+		margin-right: $breadcrumb-item-margin;
+		color: $breadcrumb-color;
+		font-weight: $breadcrumb-font-weight;
+		line-height: $breadcrumb-line-height;
+		cursor: pointer;
+		text-decoration: none;
+
+		&__icon {
+			margin-right: $breadcrumb-item-icon-margin;
+		}
+
+		&__disabled  {
+			// @include avariable(
+		    //   "opacity",
+		    //   "breadcrumb-disabled-opacity",
+		    //   $breadcrumb-disabled-opacity
+		    // );
+            opacity: var(--#{$prefix}button-disabled-opacity, $breadcrumb-disabled-opacity);
+		    cursor: not-allowed;
+		    pointer-events: none;
+            color: $grey;
+			
+		}
+
+		@each $name, $pair in $colors {
+			$color: list.nth($pair, 1);
+			&__#{$name} {
+				 // for a tags
+				&.active {
+					// @include avariable("color", ("variant-" + #{$name}), $color);
+                    color: var(--#{$prefix}variant-#{$name}, $color);
+				}
+				// for router-link tag
+				&.router-link-active {
+					// @include avariable("color", ("variant-" + #{$name}), $color);
+                    color: var(--#{$prefix}variant-#{$name}, $color);
+                    // @include inselectable;
+				}
+			}
+		}
+	}
+
+	@each $name, $value in $sizes {
+		&__#{$name} {
+			// @include avariable("font-size", ("breadcumb-font-size-" + #{$name}), $value);
+            // font-size: $value;
+            font-size: var(--#{$prefix}breadcrumb-font-size-#{$name},$value);
+		}
+	}
+
+	&__centered {
+		justify-content: center;
+	  }
+	
+	&__right {
+		justify-content: right;
+	}
+
+	&__has-arrow-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "→";
+			margin-right: $breadcrumb-item-margin;
+		}
+	}
+	&__has-dot-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "∙";
+			margin-right: $breadcrumb-item-margin;
+		}
+
+	}
+	&__has-slash-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "/";
+			margin-right: $breadcrumb-item-margin;
+		}
+
+	}
+	&__has-bullet-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "•";
+			margin-right: $breadcrumb-item-margin;
+		}
+	}
+	&__has-succeeds-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "⮞";
+			margin-right: $breadcrumb-item-margin;
+		}
+	}
+	&__has-chevron-separator {
+		.o-breadcrumb-item:not(:first-child)::before {
+			content: "⮞";
+			margin-right: $breadcrumb-item-margin;
+		}
+	}
+
+}
