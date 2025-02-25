@@ -11,33 +11,9 @@ $breadcrumb-item-icon-margin: 2px !default;
 $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 /* @docs */
 
-// router-link-active router-link-exact-active
-// ██████╗░██████╗░███████╗░█████╗░██████╗░░█████╗░██████╗░██╗░░░██╗███╗░░░███╗██████╗░
-// ██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗██║░░░██║████╗░████║██╔══██╗
-// ██████╦╝██████╔╝█████╗░░███████║██║░░██║██║░░╚═╝██████╔╝██║░░░██║██╔████╔██║██████╦╝
-// ██╔══██╗██╔══██╗██╔══╝░░██╔══██║██║░░██║██║░░██╗██╔══██╗██║░░░██║██║╚██╔╝██║██╔══██╗
-// ██████╦╝██║░░██║███████╗██║░░██║██████╔╝╚█████╔╝██║░░██║╚██████╔╝██║░╚═╝░██║██████╦╝
-// ╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░░╚════╝░╚═╝░░╚═╝░╚═════╝░╚═╝░░░░░╚═╝╚═════╝░
-
-
-/// Assigns a specific variable to an attribute
-///
-/// @param {string} $attribute
-///   The attribute we want to include
-/// @param {string} $name
-///   Variable name
-/// @param {string} $value
-///   Variable value
-@mixin avariable($attribute, $name, $value) {
-    $variable: variable($name, $value);
-    @if $variable {
-      #{$attribute}: $variable;
-    }
-  }
 
 .o-breadcrumb { 
 	display: flex;
-	// background-color: red;
 	
 	.o-breadcrumb-item {
 		margin-right: $breadcrumb-item-margin;
@@ -52,11 +28,6 @@ $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 		}
 
 		&__disabled  {
-			// @include avariable(
-		    //   "opacity",
-		    //   "breadcrumb-disabled-opacity",
-		    //   $breadcrumb-disabled-opacity
-		    // );
             opacity: var(--#{$prefix}button-disabled-opacity, $breadcrumb-disabled-opacity);
 		    cursor: not-allowed;
 		    pointer-events: none;
@@ -69,12 +40,10 @@ $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 			&__#{$name} {
 				 // for a tags
 				&.active {
-					// @include avariable("color", ("variant-" + #{$name}), $color);
                     color: var(--#{$prefix}variant-#{$name}, $color);
 				}
 				// for router-link tag
 				&.router-link-active {
-					// @include avariable("color", ("variant-" + #{$name}), $color);
                     color: var(--#{$prefix}variant-#{$name}, $color);
                     // @include inselectable;
 				}
@@ -84,8 +53,6 @@ $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 
 	@each $name, $value in $sizes {
 		&__#{$name} {
-			// @include avariable("font-size", ("breadcumb-font-size-" + #{$name}), $value);
-            // font-size: $value;
             font-size: var(--#{$prefix}breadcrumb-font-size-#{$name},$value);
 		}
 	}
