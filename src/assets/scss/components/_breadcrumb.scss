@@ -24,17 +24,6 @@ $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 		cursor: pointer;
 		text-decoration: none;
 
-		&__icon {
-			margin-right: $breadcrumb-item-icon-margin;
-		}
-
-		&__disabled  {
-            opacity: var(--#{$prefix}button-disabled-opacity, $breadcrumb-disabled-opacity);
-		    cursor: not-allowed;
-		    pointer-events: none;
-            color: $grey;	
-		}
-
 		@each $name, $pair in $colors {
 			$color: list.nth($pair, 1);
 			&__#{$name} {
@@ -45,9 +34,19 @@ $breadcrumb-disabled-opacity: $base-disabled-opacity !default;
 				// for router-link tag
 				&.router-link-active {
                     color: var(--#{$prefix}variant-#{$name}, $color);
-                    // @include inselectable;
 				}
 			}
+		}
+		&__icon {
+			margin-right: var(--#{$prefix}breadcrumb-item-icon-margin, $breadcrumb-item-icon-margin);
+			margin-left: var(--#{$prefix}breadcrumb-item-icon-margin, $breadcrumb-item-icon-margin);
+		}
+
+		&__disabled  {
+            opacity: var(--#{$prefix}button-disabled-opacity, $breadcrumb-disabled-opacity);
+		    cursor: not-allowed;
+		    pointer-events: none;
+            color: $grey;	
 		}
 	}
 
