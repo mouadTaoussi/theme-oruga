@@ -28,7 +28,7 @@ $steps-step-border-radius-rounded: h.useVar("border-radius-rounded") !default;
 $steps-step-divider-height: 0.2em !default;
 
 $steps-step-label-padding: 0.2em !default;
-$steps-step-label-background-color: h.useVar("white") !default;
+$steps-step-label-background-color: h.useVar("white") !default; // @TODO use semantic variable
 
 $steps-content-padding: calc(2 * h.useVar("control-spacer")) !default;
 /* @docs */

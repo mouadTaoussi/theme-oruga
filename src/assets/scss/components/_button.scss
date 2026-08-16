@@ -24,10 +24,10 @@ $button-background-color: h.useVar("control-background-color") !default;
 
 $button-hover-color: $button-color;
 $button-hover-background-color: $button-background-color;
-$button-hover-border-color: h.useVar("grey-light");
+$button-hover-border-color: h.useVar("grey-light"); // @TODO use semantic variable
 
 $button-outlined-background-color: transparent !default;
-$button-outlined-border-color: h.useVar("grey-light") !default;
+$button-outlined-border-color: h.useVar("grey-light") !default; // @TODO use semantic variable
 /* @docs */
 
 .o-button {

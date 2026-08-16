@@ -21,8 +21,8 @@ $tabs-tab-border-radius: h.useVar("border-radius") !default;
 $tabs-tab-background-color: transparent !default;
 
 $tabs-tab-hover-color: $tabs-tab-color !default;
-$tabs-tab-hover-background-color: hsl(0, 0%, 96%) !default;
-$tabs-tab-hover-border-color: hsl(0, 0%, 86%) !default;
+$tabs-tab-hover-background-color: hsl(0, 0%, 96%) !default; // @TODO use semantic variable
+$tabs-tab-hover-border-color: hsl(0, 0%, 86%) !default; // @TODO use semantic variable
 $tabs-tab-hover-border-radius: $tabs-tab-border-radius !default;
 
 $tabs-tab-active-color: h.useVar("primary") !default;

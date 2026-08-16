@@ -26,7 +26,7 @@ $dropdown-item-line-height: h.useVar("line-height") !default;
 $dropdown-item-background-color: transparent !default;
 $dropdown-item-active-color: h.useVar("primary-invert") !default;
 $dropdown-item-active-background-color: h.useVar("primary") !default;
-$dropdown-item-hover-background-color: h.useVar("grey-lighter") !default;
+$dropdown-item-hover-background-color: h.useVar("grey-lighter") !default; // @TODO use semantic variable
 $dropdown-item-hover-color: h.useVar("font-color") !default;
 
 $dropdown-modal-zindex: map.get(vars.$zindex, "modal") !default;

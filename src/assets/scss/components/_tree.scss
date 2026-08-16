@@ -16,8 +16,8 @@ $tree-item-border: unset !default;
 $tree-item-border-radius: h.useVar("border-radius") !default;
 $tree-item-background-color: transparent !default;
 
-$tree-item-hover-color: h.useVar("black") !default;
-$tree-item-hover-background-color: h.useVar("grey-lightest") !default;
+$tree-item-hover-color: h.useVar("black") !default; // @TODO use semantic variable
+$tree-item-hover-background-color: h.useVar("grey-lightest") !default; // @TODO use semantic variable
 $tree-item-active-color: h.useVar("primary-invert") !default;
 $tree-item-active-background-color: h.useVar("primary") !default;
 /* @docs */

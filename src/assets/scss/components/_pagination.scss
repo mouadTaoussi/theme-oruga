@@ -4,7 +4,7 @@
 /* @docs */
 $pagination-spacer: calc(0.5 * h.useVar("control-spacer")) !default;
 $pagination-disabled-opacity: h.useVar("control-disabled-opacity") !default;
-$pagination-ellipsis-color: h.useVar("grey-light") !default;
+$pagination-ellipsis-color: h.useVar("grey-light") !default; // @TODO use semantic variable
 
 $pagination-button-color: h.useVar("font-color") !default;
 $pagination-button-font-size: h.useVar("font-size") !default;
@@ -31,7 +31,7 @@ $pagination-button-hover-color: $pagination-button-color;
 $pagination-button-hover-background-color: $pagination-button-background-color;
 $pagination-button-hover-border-color: $pagination-button-border-color;
 
-$pagination-button-current-color: h.useVar("white") !default;
+$pagination-button-current-color: h.useVar("white") !default; // @TODO use semantic variable
 $pagination-button-current-background-color: h.useVar("primary") !default;
 $pagination-button-current-border-color: h.useVar("primary") !default;
 /* @docs */
