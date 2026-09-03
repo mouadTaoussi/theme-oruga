@@ -28,7 +28,7 @@ $slider-thumb-font-weight: h.useVar("font-weight") !default;
 $slider-thumb-line-height: h.useVar("line-height") !default;
 
 $slider-thumb-box-shadow: none !default;
-$slider-thumb-border-width: 1px !default;
+$slider-thumb-border-width: h.useVar("control-border-width") !default;
 $slider-thumb-border-style: solid !default;
 $slider-thumb-border-color: h.useVar("grey-light") !default; // @TODO use semantic variable
 $slider-thumb-border-radius: h.useVar("border-radius") !default;
