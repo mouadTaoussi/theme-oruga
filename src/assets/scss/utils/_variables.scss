@@ -129,87 +129,87 @@ $overlay-box-shadow: 5px 0px 13px 3px $control-shadow-color !default;
 
 
     // HOVER content-hover-color - background-hover-color - border-hover-color 
-$hover-background-color: h.useVar("grey-light") !default;
-$hover-background-color-inverse: h.useVar("grey-dark") !default;
-$hover-background-color-subtle: h.useVar("grey-lightest") !default;
-$hover-background-color-muted: h.useVar("grey-light") !default;
-$hover-background-color-emphasis: h.useVar("grey") !default;
+// $hover-background-color: h.useVar("grey-light") !default;
+// $hover-background-color-inverse: h.useVar("grey-dark") !default;
+// $hover-background-color-subtle: h.useVar("grey-lightest") !default;
+// $hover-background-color-muted: h.useVar("grey-light") !default;
+// $hover-background-color-emphasis: h.useVar("grey") !default;
 
-$hover-border-color: h.useVar("grey") !default;
-$hover-border-color-inverse: h.useVar("white") !default;
-$hover-border-color-subtle: h.useVar("grey-light") !default;
-$hover-border-color-muted: h.useVar("grey") !default;
-$hover-border-color-emphasis: h.useVar("grey-dark") !default;
+// $hover-border-color: h.useVar("grey") !default;
+// $hover-border-color-inverse: h.useVar("white") !default;
+// $hover-border-color-subtle: h.useVar("grey-light") !default;
+// $hover-border-color-muted: h.useVar("grey") !default;
+// $hover-border-color-emphasis: h.useVar("grey-dark") !default;
 
-$hover-color: h.useVar("grey") !default;
-$hover-color-inverse: h.useVar("white") !default;
-$hover-color-subtle: h.useVar("grey-dark") !default;
-$hover-color-muted: h.useVar("grey") !default;
-$hover-color-emphasis: h.useVar("black") !default;
+// $hover-color: h.useVar("grey") !default;
+// $hover-color-inverse: h.useVar("white") !default;
+// $hover-color-subtle: h.useVar("grey-dark") !default;
+// $hover-color-muted: h.useVar("grey") !default;
+// $hover-color-emphasis: h.useVar("black") !default;
 
 /*****************************************************************************/
-$breadcrumb-item-hover-color: h.useVar("white") !default;
-$datepicker-table-cell-hovered-color: h.useVar("white") !default;
-$menu-item-hover-color: h.useVar("white") !default;
-$button-hover-border-color: h.useVar("grey-light");
-$tabs-tab-hover-background-color: hsl(0, 0%, 96%) !default;
-$tabs-tab-hover-border-color: hsl(0, 0%, 86%) !default;
-$dropdown-item-hover-background-color: h.useVar("grey-lighter") !default;
-$listbox-item-hover-background-color: h.useVar("grey-lighter") !default;
-$tree-item-hover-background-color: h.useVar("grey-lightest") !default;
-$datepicker-table-cell-hovered-background-color: h.useVar("grey") !default;
-$table-th-sorted-hover-border-color: h.useVar("grey") !default;
-$breadcrumb-item-hover-background-color: h.useVar("secondary") !default;
-$tree-item-hover-color: h.useVar("black") !default;
+$breadcrumb-item-hover-color: h.useVar("white") !default; // $hover-color-inverse
+$datepicker-table-cell-hovered-color: h.useVar("white") !default; // $hover-color-inverse
+$menu-item-hover-color: h.useVar("white") !default; // $hover-color-inverse
+$button-hover-border-color: h.useVar("grey-light"); // $hover-border-color-subtle
+$tabs-tab-hover-background-color: hsl(0, 0%, 96%) !default;  // $hover-background-color-subtle
+$tabs-tab-hover-border-color: hsl(0, 0%, 86%) !default;  // $hover-border-color-subtle
+$dropdown-item-hover-background-color: h.useVar("grey-lighter") !default; // $hover-background-color-subtle
+$listbox-item-hover-background-color: h.useVar("grey-lighter") !default; // $hover-background-color-subtle
+$tree-item-hover-background-color: h.useVar("grey-lightest") !default; // $hover-background-color-subtle
+$datepicker-table-cell-hovered-background-color: h.useVar("grey") !default; // $hover-background-color-emphasis
+$table-th-sorted-hover-border-color: h.useVar("grey") !default; // $hover-border-color
+$breadcrumb-item-hover-background-color: h.useVar("secondary") !default; // $hover-background-color-emphasis
+$tree-item-hover-color: h.useVar("black") !default; // $hover-color-emphasis
 
     // BACKGROUND background-color
-$background-color: h.useVar("white") !default;
-$background-color-inverse: h.useVar("grey-darkest") !default;
-$background-color-subtle: h.useVar("grey-lightest") !default;
-$background-color-muted: h.useVar("grey-lightest") !default;
-// $background-color-overlay: h.useVar("grey-darkest") !default;
-$background-color-emphasis: h.useVar("grey-light") !default;
+// $background-color: h.useVar("white") !default;
+// $background-color-inverse: h.useVar("grey-darkest") !default;
+// $background-color-subtle: h.useVar("grey-lightest") !default;
+// $background-color-muted: h.useVar("grey-lighter") !default;
+// // $background-color-overlay: h.useVar("grey-darkest") !default;
+// $background-color-emphasis: h.useVar("grey-light") !default;
 
 /*****************************************************************************/
-$carousel-indicators-background: rgba(h.useVar("white"), 0.5) !default;
-$carousel-indicator-background: h.useVar("white") !default;
-$radio-background-color: h.useVar("white") !default;
-$steps-step-label-background-color: h.useVar("white") !default;
-$datepicker-event-background-color: h.useVar("grey-light") !default;
-$switch-background-color: h.useVar("grey-light") !default;
-$skeleton-background-color: vars.$grey-lighter !default;
-$slider-track-background-color: h.useVar("grey-lighter") !default;
-$table-tr-detail-background-color: h.useVar("grey-lightest") !default;
-$tag-background-color: h.useVar("grey-lightest") !default;
-$tooltip-content-background-color: h.useVar("grey-darkest") !default;
+$carousel-indicators-background: rgba(h.useVar("white"), 0.5) !default; // $background-color
+$carousel-indicator-background: h.useVar("white") !default; // $background-color
+$radio-background-color: h.useVar("white") !default; // $background-color
+$steps-step-label-background-color: h.useVar("white") !default; // $background-color
+$datepicker-event-background-color: h.useVar("grey-light") !default; // $background-color-emphasis
+$switch-background-color: h.useVar("grey-light") !default; // $background-color-emphasis
+$skeleton-background-color: vars.$grey-lighter !default; // $background-color-muted
+$slider-track-background-color: h.useVar("grey-lighter") !default; // $background-color-muted
+$table-tr-detail-background-color: h.useVar("grey-lightest") !default; // $background-color-subtle
+$tag-background-color: h.useVar("grey-lightest") !default; // $background-color-subtle
+$tooltip-content-background-color: h.useVar("grey-darkest") !default; // $background-color-inverse
 
     // COLOR content-color
-$color: h.useVar("black") !default;
-$color-inverse: h.useVar("white") !default;
-$color-subtle: h.useVar("grey-dark") !default;
-$color-muted: h.useVar("grey") !default;
-$color-emphasis: h.useVar("black") !default;
+// $color: h.useVar("black") !default;
+// $color-inverse: h.useVar("white") !default;
+// $color-subtle: h.useVar("grey-dark") !default;
+// $color-muted: h.useVar("grey") !default;
+// $color-emphasis: h.useVar("black") !default;
 
 /*****************************************************************************/
-$modal-close-color: h.useVar("white") !default;
-$notification-close-color: h.useVar("white") !default;
-$pagination-button-current-color: h.useVar("white") !default;
-$tooltip-content-color: h.useVar("white") !default;
+$modal-close-color: h.useVar("white") !default; // $color-inverse
+$notification-close-color: h.useVar("white") !default; // $color-inverse
+$pagination-button-current-color: h.useVar("white") !default; // $color-inverse
+$tooltip-content-color: h.useVar("white") !default; // $color-inverse
 $pagination-ellipsis-color: h.useVar("grey-light") !default;
 
     // BORDER border-color 
-$border-color: h.useVar("grey-lighter") !default;
-$border-color-inverse: h.useVar("white") !default;
-$border-color-subtle: h.useVar("grey-light") !default;
-$border-color-muted: h.useVar("grey") !default;
-$border-color-emphasis: h.useVar("grey-dark") !default;
+// $border-color: h.useVar("grey-lighter") !default;
+// $border-color-inverse: h.useVar("white") !default;
+// $border-color-subtle: h.useVar("grey-light") !default;
+// $border-color-muted: h.useVar("grey") !default;
+// $border-color-emphasis: h.useVar("grey-dark") !default;
 
 /*****************************************************************************/
-$carousel-arrow-border-color: h.useVar("white") !default;
-$slider-thumb-border-color: h.useVar("grey-light") !default;
-$switch-border-color: h.useVar("grey-lighter") !default;
-$table-th-sorted-border-color: h.useVar("grey") !default;
-$slider-track-border-color: h.useVar("grey") !default;
+$carousel-arrow-border-color: h.useVar("white") !default; // $border-color-inverse
+$slider-thumb-border-color: h.useVar("grey-light") !default; // $border-color-subtle
+$switch-border-color: h.useVar("grey-lighter") !default; // $border-color
+$table-th-sorted-border-color: h.useVar("grey") !default; // $border-color-muted
+$slider-track-border-color: h.useVar("grey") !default; // $border-color-muted
 
     // other
 $button-outlined-border-color: h.useVar("grey-light") !default;
