@@ -42,6 +42,43 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     @include h.defineVar("grey-darker", vars.$grey-darker);
     @include h.defineVar("grey-darkest", vars.$grey-darkest);
 
+    // define color variants
+    // $hover-background-color: h.useVar("grey") !default;
+    // $hover-background-color-inverse: h.useVar("grey-dark") !default;
+    // $hover-background-color-subtle: h.useVar("grey-lightest") !default;
+    // $hover-background-color-muted: h.useVar("grey-light") !default;
+    // $hover-background-color-emphasis: h.useVar("grey-dark") !default;
+
+    // $hover-border-color: h.useVar("grey") !default;
+    // $hover-border-color-inverse: h.useVar("white") !default;
+    // $hover-border-color-subtle: h.useVar("grey-light") !default;
+    // $hover-border-color-muted: h.useVar("grey-lightest") !default;
+    // $hover-border-color-emphasis: h.useVar("grey-dark") !default;
+
+    // $hover-color: h.useVar("grey") !default;
+    // $hover-color-inverse: h.useVar("white") !default;
+    // $hover-color-subtle: h.useVar("grey-dark") !default;
+    // $hover-color-muted: h.useVar("grey-light") !default;
+    // $hover-color-emphasis: h.useVar("black") !default;
+
+    // $background-color: h.useVar("white") !default;
+    // $background-color-inverse: h.useVar("grey-darkest") !default;
+    // $background-color-subtle: h.useVar("grey-lightest") !default;
+    // $background-color-muted: h.useVar("grey-lighter") !default;
+    // $background-color-emphasis: h.useVar("grey-light") !default;
+
+    // $color: h.useVar("black") !default;
+    // $color-inverse: h.useVar("white") !default;
+    // $color-subtle: h.useVar("grey-light") !default;
+    // $color-muted: h.useVar("grey") !default;
+    // $color-emphasis: h.useVar("grey-darkest") !default;
+
+    // $border-color: h.useVar("grey") !default;
+    // $border-color-inverse: h.useVar("white") !default;
+    // $border-color-subtle: h.useVar("grey-lighter") !default;
+    // $border-color-muted: h.useVar("grey-light") !default;
+    // $border-color-emphasis: h.useVar("grey-dark") !default;
+
     // define size variables
     @each $name, $size in vars.$sizes {
         @include h.defineVar("size-#{$name}", $size);

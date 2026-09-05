@@ -129,22 +129,22 @@ $overlay-box-shadow: 5px 0px 13px 3px $control-shadow-color !default;
 
 
     // HOVER content-hover-color - background-hover-color - border-hover-color 
-// $hover-background-color: h.useVar("grey-light") !default;
+// $hover-background-color: h.useVar("grey") !default;
 // $hover-background-color-inverse: h.useVar("grey-dark") !default;
 // $hover-background-color-subtle: h.useVar("grey-lightest") !default;
 // $hover-background-color-muted: h.useVar("grey-light") !default;
-// $hover-background-color-emphasis: h.useVar("grey") !default;
+// $hover-background-color-emphasis: h.useVar("grey-dark") !default;
 
 // $hover-border-color: h.useVar("grey") !default;
 // $hover-border-color-inverse: h.useVar("white") !default;
 // $hover-border-color-subtle: h.useVar("grey-light") !default;
-// $hover-border-color-muted: h.useVar("grey") !default;
+// $hover-border-color-muted: h.useVar("grey-lightest") !default;
 // $hover-border-color-emphasis: h.useVar("grey-dark") !default;
 
 // $hover-color: h.useVar("grey") !default;
 // $hover-color-inverse: h.useVar("white") !default;
 // $hover-color-subtle: h.useVar("grey-dark") !default;
-// $hover-color-muted: h.useVar("grey") !default;
+// $hover-color-muted: h.useVar("grey-light") !default;
 // $hover-color-emphasis: h.useVar("black") !default;
 
 /*****************************************************************************/
@@ -157,9 +157,9 @@ $tabs-tab-hover-border-color: hsl(0, 0%, 86%) !default;  // $hover-border-color-
 $dropdown-item-hover-background-color: h.useVar("grey-lighter") !default; // $hover-background-color-subtle
 $listbox-item-hover-background-color: h.useVar("grey-lighter") !default; // $hover-background-color-subtle
 $tree-item-hover-background-color: h.useVar("grey-lightest") !default; // $hover-background-color-subtle
-$datepicker-table-cell-hovered-background-color: h.useVar("grey") !default; // $hover-background-color-emphasis
+$datepicker-table-cell-hovered-background-color: h.useVar("grey") !default; // $hover-background-color-emphasis // verify
 $table-th-sorted-hover-border-color: h.useVar("grey") !default; // $hover-border-color
-$breadcrumb-item-hover-background-color: h.useVar("secondary") !default; // $hover-background-color-emphasis
+$breadcrumb-item-hover-background-color: h.useVar("secondary") !default; // $hover-background-color-emphasis // verify
 $tree-item-hover-color: h.useVar("black") !default; // $hover-color-emphasis
 
     // BACKGROUND background-color
@@ -167,7 +167,6 @@ $tree-item-hover-color: h.useVar("black") !default; // $hover-color-emphasis
 // $background-color-inverse: h.useVar("grey-darkest") !default;
 // $background-color-subtle: h.useVar("grey-lightest") !default;
 // $background-color-muted: h.useVar("grey-lighter") !default;
-// // $background-color-overlay: h.useVar("grey-darkest") !default;
 // $background-color-emphasis: h.useVar("grey-light") !default;
 
 /*****************************************************************************/
@@ -186,30 +185,30 @@ $tooltip-content-background-color: h.useVar("grey-darkest") !default; // $backgr
     // COLOR content-color
 // $color: h.useVar("black") !default;
 // $color-inverse: h.useVar("white") !default;
-// $color-subtle: h.useVar("grey-dark") !default;
+// $color-subtle: h.useVar("grey-light") !default;
 // $color-muted: h.useVar("grey") !default;
-// $color-emphasis: h.useVar("black") !default;
+// $color-emphasis: h.useVar("grey-darkest") !default;
 
 /*****************************************************************************/
 $modal-close-color: h.useVar("white") !default; // $color-inverse
 $notification-close-color: h.useVar("white") !default; // $color-inverse
 $pagination-button-current-color: h.useVar("white") !default; // $color-inverse
 $tooltip-content-color: h.useVar("white") !default; // $color-inverse
-$pagination-ellipsis-color: h.useVar("grey-light") !default;
+$pagination-ellipsis-color: h.useVar("grey-light") !default; // $color-subtle
 
     // BORDER border-color 
-// $border-color: h.useVar("grey-lighter") !default;
+// $border-color: h.useVar("grey") !default;
 // $border-color-inverse: h.useVar("white") !default;
-// $border-color-subtle: h.useVar("grey-light") !default;
-// $border-color-muted: h.useVar("grey") !default;
+// $border-color-subtle: h.useVar("grey-lighter") !default;
+// $border-color-muted: h.useVar("grey-light") !default;
 // $border-color-emphasis: h.useVar("grey-dark") !default;
 
 /*****************************************************************************/
 $carousel-arrow-border-color: h.useVar("white") !default; // $border-color-inverse
-$slider-thumb-border-color: h.useVar("grey-light") !default; // $border-color-subtle
-$switch-border-color: h.useVar("grey-lighter") !default; // $border-color
-$table-th-sorted-border-color: h.useVar("grey") !default; // $border-color-muted
-$slider-track-border-color: h.useVar("grey") !default; // $border-color-muted
+$slider-thumb-border-color: h.useVar("grey-light") !default; // $border-color-muted
+$switch-border-color: h.useVar("grey-lighter") !default; // $border-color-subtle
+$table-th-sorted-border-color: h.useVar("grey") !default; // $border-color
+$slider-track-border-color: h.useVar("grey") !default; // $border-color
 
     // other
 $button-outlined-border-color: h.useVar("grey-light") !default;
@@ -223,3 +222,5 @@ $table-card-box-shadow:
     0 2px 3px h.useVar("control-shadow-color"),
     0 0 0 1px h.useVar("control-shadow-color") !default;
 $table-td-border-style: solid !default; // ...
+
+// see: https://chakra-ui.com/docs/theming/colors
