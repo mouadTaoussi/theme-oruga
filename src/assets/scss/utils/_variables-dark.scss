@@ -1,8 +1,45 @@
-$font-color: #363636 !default;
+// $font-color: #363636 !default;
 
-$control-background-color: $white !default;
-$control-border-color: $grey-lighter !default;
+// $control-background-color: $white !default;
+// $control-border-color: $grey-lighter !default;
 
-$control-shadow-color: hsla(0, 0%, 4%, 0.1) !default;
+// $control-shadow-color: hsla(0, 0%, 4%, 0.1) !default;
 
-$overlay-background-color: hsla(0, 0%, 4%, 0.86) !default;
+// $overlay-background-color: hsla(0, 0%, 4%, 0.86) !default;
+
+// @TODO Add dark colours
+$background-color-dark: h.useVar("white") !default;
+$background-color-inverse-dark: h.useVar("grey-darkest") !default;
+$background-color-subtle-dark: h.useVar("grey-lightest") !default;
+$background-color-muted-dark: h.useVar("grey-lighter") !default;
+$background-color-emphasis-dark: h.useVar("grey-light") !default;
+
+$color-dark: h.useVar("black") !default;
+$color-inverse-dark: h.useVar("white") !default;
+$color-subtle-dark: h.useVar("grey-light") !default;
+$color-muted-dark: h.useVar("grey") !default;
+$color-emphasis-dark: h.useVar("grey-darkest") !default;
+
+$border-color-dark: h.useVar("grey") !default;
+$border-color-inverse-dark: h.useVar("white") !default;
+$border-color-subtle-dark: h.useVar("grey-lighter") !default;
+$border-color-muted-dark: h.useVar("grey-light") !default;
+$border-color-emphasis-dark: h.useVar("grey-dark") !default;
+
+$hover-background-color-dark: h.useVar("grey") !default;
+$hover-background-color-inverse-dark: h.useVar("grey-dark") !default;
+$hover-background-color-subtle-dark: h.useVar("grey-lightest") !default;
+$hover-background-color-muted-dark: h.useVar("grey-light") !default;
+$hover-background-color-emphasis-dark: h.useVar("grey-dark") !default;
+
+$hover-color-dark: h.useVar("grey") !default;
+$hover-color-inverse-dark: h.useVar("white") !default;
+$hover-color-subtle-dark: h.useVar("grey-dark") !default;
+$hover-color-muted-dark: h.useVar("grey-light") !default;
+$hover-color-emphasis-dark: h.useVar("black") !default;
+
+$hover-border-color-dark: h.useVar("grey") !default;
+$hover-border-color-inverse-dark: h.useVar("white") !default;
+$hover-border-color-subtle-dark: h.useVar("grey-light") !default;
+$hover-border-color-muted-dark: h.useVar("grey-lightest") !default;
+$hover-border-color-emphasis-dark: h.useVar("grey-dark") !default;

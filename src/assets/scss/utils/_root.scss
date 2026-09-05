@@ -42,42 +42,42 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     @include h.defineVar("grey-darker", vars.$grey-darker);
     @include h.defineVar("grey-darkest", vars.$grey-darkest);
 
-    // define color variants
-    // $hover-background-color: h.useVar("grey") !default;
-    // $hover-background-color-inverse: h.useVar("grey-dark") !default;
-    // $hover-background-color-subtle: h.useVar("grey-lightest") !default;
-    // $hover-background-color-muted: h.useVar("grey-light") !default;
-    // $hover-background-color-emphasis: h.useVar("grey-dark") !default;
+    // define theme variables
+    @include h.defineVar("background-color", vars.$background-color);
+    @include h.defineVar("background-color-inverse", vars.$background-color-inverse);
+    @include h.defineVar("background-color-subtle", vars.$background-color-subtle);
+    @include h.defineVar("background-color-muted", vars.$background-color-muted);
+    @include h.defineVar("background-color-emphasis", vars.$background-color-emphasis);
 
-    // $hover-border-color: h.useVar("grey") !default;
-    // $hover-border-color-inverse: h.useVar("white") !default;
-    // $hover-border-color-subtle: h.useVar("grey-light") !default;
-    // $hover-border-color-muted: h.useVar("grey-lightest") !default;
-    // $hover-border-color-emphasis: h.useVar("grey-dark") !default;
+    @include h.defineVar("color", vars.$color);
+    @include h.defineVar("color-inverse", vars.$color-inverse);
+    @include h.defineVar("color-subtle", vars.$color-subtle);
+    @include h.defineVar("color-muted", vars.$color-muted);
+    @include h.defineVar("color-emphasis", vars.$color-emphasis);
 
-    // $hover-color: h.useVar("grey") !default;
-    // $hover-color-inverse: h.useVar("white") !default;
-    // $hover-color-subtle: h.useVar("grey-dark") !default;
-    // $hover-color-muted: h.useVar("grey-light") !default;
-    // $hover-color-emphasis: h.useVar("black") !default;
+    @include h.defineVar("border-color", vars.$border-color);
+    @include h.defineVar("border-color-inverse", vars.$border-color-inverse);
+    @include h.defineVar("border-color-subtle", vars.$border-color-subtle);
+    @include h.defineVar("border-color-muted", vars.$border-color-muted);
+    @include h.defineVar("border-color-emphasis", vars.$border-color-emphasis);
 
-    // $background-color: h.useVar("white") !default;
-    // $background-color-inverse: h.useVar("grey-darkest") !default;
-    // $background-color-subtle: h.useVar("grey-lightest") !default;
-    // $background-color-muted: h.useVar("grey-lighter") !default;
-    // $background-color-emphasis: h.useVar("grey-light") !default;
+    @include h.defineVar("hover-background-color", vars.$hover-background-color);
+    @include h.defineVar("hover-background-color-inverse", vars.$hover-background-color-inverse);
+    @include h.defineVar("hover-background-color-subtle", vars.$hover-background-color-subtle);
+    @include h.defineVar("hover-background-color-muted", vars.$hover-background-color-muted);
+    @include h.defineVar("hover-background-color-emphasis", vars.$hover-background-color-emphasis);
 
-    // $color: h.useVar("black") !default;
-    // $color-inverse: h.useVar("white") !default;
-    // $color-subtle: h.useVar("grey-light") !default;
-    // $color-muted: h.useVar("grey") !default;
-    // $color-emphasis: h.useVar("grey-darkest") !default;
+    @include h.defineVar("hover-color", vars.$hover-color);
+    @include h.defineVar("hover-color-inverse", vars.$hover-color-inverse);
+    @include h.defineVar("hover-color-subtle", vars.$hover-color-subtle);
+    @include h.defineVar("hover-color-muted", vars.$hover-color-muted);
+    @include h.defineVar("hover-color-emphasis", vars.$hover-color-emphasis);
 
-    // $border-color: h.useVar("grey") !default;
-    // $border-color-inverse: h.useVar("white") !default;
-    // $border-color-subtle: h.useVar("grey-lighter") !default;
-    // $border-color-muted: h.useVar("grey-light") !default;
-    // $border-color-emphasis: h.useVar("grey-dark") !default;
+    @include h.defineVar("hover-border-color", vars.$hover-border-color);
+    @include h.defineVar("hover-border-color-inverse", vars.$hover-border-color-inverse);
+    @include h.defineVar("hover-border-color-subtle", vars.$hover-border-color-subtle);
+    @include h.defineVar("hover-border-color-muted", vars.$hover-border-color-muted);
+    @include h.defineVar("hover-border-color-emphasis", vars.$hover-border-color-emphasis);
 
     // define size variables
     @each $name, $size in vars.$sizes {
