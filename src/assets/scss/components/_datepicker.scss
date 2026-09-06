@@ -34,15 +34,18 @@ $datepicker-table-cell-selected-background-color: h.useVar("primary") !default;
 $datepicker-table-cell-selected-within-background-color: rgb(
     from $datepicker-table-cell-selected-background-color r g b / 50%
 ) !default;
-$datepicker-table-cell-hovered-color: h.useVar("white") !default; // @TODO use semantic variable
-$datepicker-table-cell-hovered-background-color: h.useVar("grey") !default; // @TODO use semantic variable
+// $datepicker-table-cell-hovered-color: h.useVar("white") !default; // @TODO to be deleted
+$datepicker-table-cell-hovered-color: h.useVar("hover-color-inverse") !default;
+// $datepicker-table-cell-hovered-background-color: h.useVar("grey") !default; // @TODO to be deleted
+$datepicker-table-cell-hovered-background-color: h.useVar("hover-background-color-emphasis") !default;
 $datepicker-table-cell-hovered-within-background-color: rgb(
     from $datepicker-table-cell-hovered-background-color r g b / 50%
 ) !default;
 
 $datepicker-table-cell-events-padding: 0.3rem 0.75rem 0.75rem !default;
 
-$datepicker-event-background-color: h.useVar("grey-light") !default; // @TODO use semantic variable
+// $datepicker-event-background-color: h.useVar("grey-light") !default; // @TODO to be deleted
+$datepicker-event-background-color: h.useVar("background-color-emphasis") !default;
 $datepicker-event-dots-size: 0.35em !default;
 $datepicker-event-dots-margin: 0 0.1em !default;
 $datepicker-event-bars-height: 0.25em !default;

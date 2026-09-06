@@ -111,8 +111,8 @@ $border-radius-rounded: 9999px !default;
 // @TODO add border style variable and box shadow variable
 
 $control-spacer: 0.5em !default;
-$control-background-color: $white !default;
-$control-border-color: $grey-lighter !default;
+$control-background-color: h.useVar('background-color') !default; // @TODO
+$control-border-color: h.useVar('border-color-subtle') !default; // @TODO 
 $control-border-width: 1px !default;
 // $control-border-style: solid !default;
 $control-height: 2.25em !default;

@@ -21,7 +21,8 @@ $menu-item-border: unset !default;
 $menu-item-border-radius: h.useVar("border-radius") !default;
 $menu-item-background-color: transparent !default;
 
-$menu-item-hover-color: h.useVar("white") !default; // @TODO use semantic variable
+// $menu-item-hover-color: h.useVar("white") !default; // @TODO to be deleted
+$menu-item-hover-color: h.useVar("hover-color-inverse") !default;
 $menu-item-hover-background-color: h.useVar("secondary") !default;
 $menu-item-active-color: h.useVar("primary-invert") !default;
 $menu-item-active-background-color: h.useVar("primary") !default;

@@ -19,8 +19,8 @@ $steps-step-background-color: h.useVar(
 ) !default; // color scheme is inverted for steps
 $steps-step-active-border-color: h.useVar("primary") !default;
 $steps-step-active-background-color: h.useVar("primary-invert") !default;
-$steps-step-previous-border-color: $steps-step-active-background-color !default; // previus is the inverted active color scheme
-$steps-step-previous-background-color: $steps-step-active-border-color !default; // previus is the inverted active color scheme
+$steps-step-previous-border-color: $steps-step-active-background-color !default; // previous is the inverted active color scheme
+$steps-step-previous-background-color: $steps-step-active-border-color !default; // previous is the inverted active color scheme
 
 $steps-step-border-radius: h.useVar("border-radius") !default;
 $steps-step-border-radius-rounded: h.useVar("border-radius-rounded") !default;
@@ -28,7 +28,8 @@ $steps-step-border-radius-rounded: h.useVar("border-radius-rounded") !default;
 $steps-step-divider-height: 0.2em !default;
 
 $steps-step-label-padding: 0.2em !default;
-$steps-step-label-background-color: h.useVar("white") !default; // @TODO use semantic variable
+// $steps-step-label-background-color: h.useVar("white") !default; // @TODO to be deleted
+$steps-step-label-background-color: h.useVar("background-color") !default;
 
 $steps-content-padding: calc(2 * h.useVar("control-spacer")) !default;
 /* @docs */

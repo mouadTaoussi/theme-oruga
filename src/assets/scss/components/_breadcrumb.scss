@@ -22,8 +22,10 @@ $breadcrumb-item-background-color: transparent !default;
 $breadcrumb-item-active-color: h.useVar("primary") !default;
 $breadcrumb-item-active-background-color: transparent !default;
 
-$breadcrumb-item-hover-color: h.useVar("white") !default; // @TODO use semantic variable
-$breadcrumb-item-hover-background-color: h.useVar("secondary") !default; // @TODO use semantic variable
+// $breadcrumb-item-hover-color: h.useVar("white") !default; // @TODO to be deleted
+$breadcrumb-item-hover-color: h.useVar("hover-color-inverse") !default;
+// $breadcrumb-item-hover-background-color: h.useVar("secondary") !default; // @TODO to be deleted
+$breadcrumb-item-hover-background-color: h.useVar("hover-background-color-emphasis") !default; 
 /* @docs */
 
 .o-breadcrumb {

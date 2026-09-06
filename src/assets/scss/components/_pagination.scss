@@ -4,7 +4,8 @@
 /* @docs */
 $pagination-spacer: calc(0.5 * h.useVar("control-spacer")) !default;
 $pagination-disabled-opacity: h.useVar("control-disabled-opacity") !default;
-$pagination-ellipsis-color: h.useVar("grey-light") !default; // @TODO use semantic variable
+// $pagination-ellipsis-color: h.useVar("grey-light") !default; // @TODO to be deleted
+$pagination-ellipsis-color: h.useVar("color-subtle") !default;
 
 $pagination-button-color: h.useVar("font-color") !default;
 $pagination-button-font-size: h.useVar("font-size") !default;

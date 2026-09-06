@@ -18,7 +18,8 @@ $radio-border-color: h.useVar("primary") !default;
 $radio-border-style: solid !default;
 $radio-border-radius: h.useVar("border-radius-rounded") !default;
 $radio-border-width: calc(2 * h.useVar("control-border-width")) !default;
-$radio-background-color: h.useVar("white") !default; // @TODO use semantic variable
+// $radio-background-color: h.useVar("white") !default; // @TODO to be deleted
+$radio-background-color: h.useVar("background-color") !default;
 $radio-active-background-color: h.useVar("primary") !default;
 
 $radio-checked-box-shadow-length: 0 0 0.5em !default;
