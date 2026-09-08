@@ -31,7 +31,7 @@ $tree-item-active-background-color: h.useVar("primary") !default;
     @include h.defineVar("tree-item-color", $tree-item-color);
     @include h.defineVar("tree-item-font-size", $tree-item-font-size);
     @include h.defineVar("tree-item-font-weight", $tree-item-font-weight);
-    @include h.defineVar("tree-item-line-heigth", $tree-item-line-heigth);
+    @include h.defineVar("tree-item-line-height", $tree-item-line-height);
     @include h.defineVar("tree-item-border", $tree-item-border);
     @include h.defineVar("tree-item-border-radius", $tree-item-border-radius);
     @include h.defineVar(
