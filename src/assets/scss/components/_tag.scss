@@ -14,7 +14,8 @@ $tag-icon-spacer: h.useVar("control-spacer") !default;
 $tag-close-color: h.useVar("font-color") !default;
 
 $tag-box-shadow: unset !default;
-$tag-background-color: h.useVar("grey-lightest") !default; // @TODO use semantic variable
+// $tag-background-color: h.useVar("grey-lightest") !default; // @TODO to be deleted
+$tag-background-color: h.useVar("background-color-subtle") !default;
 $tag-border-color: transparent !default;
 $tag-border-style: solid !default;
 $tag-border-width: h.useVar("control-border-width") !default;
