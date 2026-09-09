@@ -5,10 +5,11 @@
 @use "sass:meta";
 
 @use "./variables" as vars;
+@use "./variables-dark" as vars-dark;
 @use "./helpers" as h;
 
 $host-selector: if(vars.$enable-host, ":root, :host", ":root");
-
+// [data-theme=light],
 #{$host-selector} {
     // define color variables
     @each $name, $pair in vars.$colors {
@@ -141,3 +142,44 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
 }
 
 // @TODO Add dark colours theme
+[data-theme=dark],
+.theme-dark {
+  /* Update CSS variables */
+  // define theme variables
+    @include h.defineVar("background-color", vars-dark.$background-color-dark);
+    @include h.defineVar("background-color-inverse", vars-dark.$background-color-inverse-dark);
+    @include h.defineVar("background-color-subtle", vars-dark.$background-color-subtle-dark);
+    @include h.defineVar("background-color-muted", vars-dark.$background-color-muted-dark);
+    @include h.defineVar("background-color-emphasis", vars-dark.$background-color-emphasis-dark);
+
+    @include h.defineVar("color", vars-dark.$color-dark);
+    @include h.defineVar("color-inverse", vars-dark.$color-inverse-dark);
+    @include h.defineVar("color-subtle", vars-dark.$color-subtle-dark);
+    @include h.defineVar("color-muted", vars-dark.$color-muted-dark);
+    @include h.defineVar("color-emphasis", vars-dark.$color-emphasis-dark);
+
+    @include h.defineVar("border-color", vars-dark.$border-color-dark);
+    @include h.defineVar("border-color-inverse", vars-dark.$border-color-inverse-dark);
+    @include h.defineVar("border-color-subtle", vars-dark.$border-color-subtle-dark);
+    @include h.defineVar("border-color-muted", vars-dark.$border-color-muted-dark);
+    @include h.defineVar("border-color-emphasis", vars-dark.$border-color-emphasis-dark);
+
+    @include h.defineVar("hover-background-color", vars-dark.$hover-background-color-dark);
+    @include h.defineVar("hover-background-color-inverse", vars-dark.$hover-background-color-inverse-dark);
+    @include h.defineVar("hover-background-color-subtle", vars-dark.$hover-background-color-subtle-dark);
+    @include h.defineVar("hover-background-color-muted", vars-dark.$hover-background-color-muted-dark);
+    @include h.defineVar("hover-background-color-emphasis", vars-dark.$hover-background-color-emphasis-dark);
+
+    @include h.defineVar("hover-color", vars-dark.$hover-color-dark);
+    @include h.defineVar("hover-color-inverse", vars-dark.$hover-color-inverse-dark);
+    @include h.defineVar("hover-color-subtle", vars-dark.$hover-color-subtle-dark);
+    @include h.defineVar("hover-color-muted", vars-dark.$hover-color-muted-dark);
+    @include h.defineVar("hover-color-emphasis", vars-dark.$hover-color-emphasis-dark);
+
+    @include h.defineVar("hover-border-color", vars-dark.$hover-border-color-dark);
+    @include h.defineVar("hover-border-color-inverse", vars-dark.$hover-border-color-inverse-dark);
+    @include h.defineVar("hover-border-color-subtle", vars-dark.$hover-border-color-subtle-dark);
+    @include h.defineVar("hover-border-color-muted", vars-dark.$hover-border-color-muted-dark);
+    @include h.defineVar("hover-border-color-emphasis", vars-dark.$hover-border-color-emphasis-dark);
+    background-color: vars-dark.$background-color-dark;
+}
