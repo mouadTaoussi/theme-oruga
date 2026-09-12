@@ -143,6 +143,24 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
 // @TODO Add dark colours theme
 [data-theme=dark],
 .theme-dark {
+    // define dark color variables
+    @each $name, $pair in vars-dark.$colors-dark {
+        @include h.defineVar($name, list.nth($pair, 1));
+        @include h.defineVar("#{$name}-invert", list.nth($pair, 2));
+        @include h.defineVar(
+            "#{$name}-focus",
+            h.createFocus(list.nth($pair, 1))
+        );
+        @include h.defineVar(
+            "#{$name}-lighter",
+            h.createLighter(list.nth($pair, 1))
+        );
+        @include h.defineVar(
+            "#{$name}-darker",
+            h.createDarker(list.nth($pair, 1))
+        );
+    }
+
     // define dark theme variables
     @include h.defineVar("background-color", vars-dark.$background-color-dark);
     @include h.defineVar("background-color-inverse", vars-dark.$background-color-inverse-dark);
@@ -179,13 +197,6 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     @include h.defineVar("hover-border-color-subtle", vars-dark.$hover-border-color-subtle-dark);
     @include h.defineVar("hover-border-color-muted", vars-dark.$hover-border-color-muted-dark);
     @include h.defineVar("hover-border-color-emphasis", vars-dark.$hover-border-color-emphasis-dark);
-
-    // @include h.defineVar("font-color", vars-dark.$font-color-dark);
-    // @include h.defineVar("control-border-color", vars-dark.$control-border-color-dark);
-    // @include h.defineVar(
-    //     "control-background-color",
-    //     vars-dark.$control-background-color-dark
-    // );
     
     background-color: vars-dark.$background-color-dark;
 }
