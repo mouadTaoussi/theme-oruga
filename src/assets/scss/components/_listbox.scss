@@ -3,15 +3,18 @@
 
 /* @docs */
 $listbox-disabled-opacity: h.useVar("control-disabled-opacity") !default;
-$listbox-background-color: h.useVar("control-background-color") !default;
-$listbox-border-color: h.useVar("control-border-color") !default;
+// $listbox-background-color: h.useVar("control-background-color") !default; // @TODO to be deleted
+$listbox-background-color: h.useVar("background-color") !default;
+// $listbox-border-color: h.useVar("control-border-color") !default; // @TODO to be deleted
+$listbox-border-color: h.useVar("border-color-subtle") !default;
 $listbox-border-style: solid !default;
 $listbox-border-width: h.useVar("control-border-width") !default;
 $listbox-border-radius: h.useVar("border-radius") !default;
 
 $listbox-item-padding: h.useVar("control-spacer")
     calc(h.useVar("control-spacer") * 2) !default;
-$listbox-item-color: h.useVar("font-color") !default;
+// $listbox-item-color: h.useVar("font-color") !default; // @TODO to be deleted
+$listbox-item-color: h.useVar("color-emphasis") !default;
 $listbox-item-font-size: h.useVar("font-size") !default;
 $listbox-item-font-weight: h.useVar("font-weight") !default;
 $listbox-item-line-height: h.useVar("line-height") !default;

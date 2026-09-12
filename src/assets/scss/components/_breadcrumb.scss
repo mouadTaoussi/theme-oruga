@@ -11,7 +11,8 @@ $breadcrumb-disabled-opacity: h.useVar("control-disabled-opacity") !default;
 $breadcrumb-item-spacer: calc(0.5 * h.useVar("control-spacer")) !default;
 $breadcrumb-item-padding: 0.3em !default;
 
-$breadcrumb-item-color: h.useVar("font-color") !default;
+// $breadcrumb-item-color: h.useVar("font-color") !default; // @TODO to be deleted
+$breadcrumb-item-color: h.useVar("color-emphasis") !default; 
 $breadcrumb-item-font-size: h.useVar("font-size") !default;
 $breadcrumb-item-font-weight: h.useVar("font-weight") !default;
 $breadcrumb-item-line-height: h.useVar("line-height") !default;

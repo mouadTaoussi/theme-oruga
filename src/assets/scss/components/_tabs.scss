@@ -16,7 +16,8 @@ $tabs-tab-line-height: h.useVar("line-height") !default;
 
 $tabs-tab-border-width: h.useVar("control-border-width") !default;
 $tabs-tab-border-style: solid !default;
-$tabs-tab-border-color: h.useVar("control-border-color") !default;
+// $tabs-tab-border-color: h.useVar("control-border-color") !default; // @TODO to be deleted
+$tabs-tab-border-color: h.useVar("border-color-subtle") !default;
 $tabs-tab-border-radius: h.useVar("border-radius") !default;
 $tabs-tab-background-color: transparent !default;
 

@@ -8,7 +8,8 @@ $datepicker-box-padding: 0 calc(2 * h.useVar("control-spacer")) !default;
 
 $datepicker-border-width: h.useVar("control-border-width") !default;
 $datepicker-border-style: solid !default;
-$datepicker-border-color: h.useVar("control-border-color") !default;
+// $datepicker-border-color: h.useVar("control-border-color") !default; // @TODO to be deleted
+$datepicker-border-color: h.useVar("border-color-subtle") !default; 
 
 $datepicker-header-padding: h.useVar("control-spacer") 0 !default;
 $datepicker-header-spacer: h.useVar("control-spacer") !default;
@@ -24,7 +25,8 @@ $datepicker-table-header-font-weight: 600 !default;
 $datepicker-table-cell-padding: 0.5rem 0.75rem !default;
 $datepicker-table-cell-border-radius: h.useVar("border-radius") !default;
 
-$datepicker-table-cell-selectable-color: h.useVar("font-color") !default;
+// $datepicker-table-cell-selectable-color: h.useVar("font-color") !default; // @TODO to be deleted
+$datepicker-table-cell-selectable-color: h.useVar("color-emphasis") !default; 
 $datepicker-table-cell-unselectable-color: h.useVar("grey-light") !default;
 $datepicker-table-cell-nearby-color: h.useVar("grey-light") !default;
 $datepicker-table-cell-today-border: solid 1px rgba(h.useVar("primary"), 0.5) !default;
