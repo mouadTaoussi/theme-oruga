@@ -400,7 +400,6 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
         @include lightTheme;
     }
 }
-
 @media (prefers-color-scheme: dark) {
     #{$host-selector} {
         @include darkTheme;
