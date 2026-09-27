@@ -42,7 +42,7 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     @include h.defineVar("grey-darker", vars.$grey-darker);
     @include h.defineVar("grey-darkest", vars.$grey-darkest);
 
-    // define light theme variables
+    // define default theme variables
     @include h.defineVar("background-color", vars.$background-color);
     @include h.defineVar(
         "background-color-inverse",
@@ -173,6 +173,104 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     @include h.defineVar("transition-timing", vars.$animation-timing);
 }
 
+// Define light theme
+@mixin lightTheme {
+    // define color variables
+    @each $name, $pair in vars.$colors {
+        @include h.defineVar($name, list.nth($pair, 1));
+        @include h.defineVar("#{$name}-invert", list.nth($pair, 2));
+        @include h.defineVar(
+            "#{$name}-focus",
+            h.createFocus(list.nth($pair, 1))
+        );
+        @include h.defineVar(
+            "#{$name}-lighter",
+            h.createLighter(list.nth($pair, 1))
+        );
+        @include h.defineVar(
+            "#{$name}-darker",
+            h.createDarker(list.nth($pair, 1))
+        );
+    }
+
+    // define light theme variables
+    @include h.defineVar("background-color", vars.$background-color);
+    @include h.defineVar(
+        "background-color-inverse",
+        vars.$background-color-inverse
+    );
+    @include h.defineVar(
+        "background-color-subtle",
+        vars.$background-color-subtle
+    );
+    @include h.defineVar(
+        "background-color-muted",
+        vars.$background-color-muted
+    );
+    @include h.defineVar(
+        "background-color-emphasis",
+        vars.$background-color-emphasis
+    );
+
+    @include h.defineVar("color", vars.$color);
+    @include h.defineVar("color-inverse", vars.$color-inverse);
+    @include h.defineVar("color-subtle", vars.$color-subtle);
+    @include h.defineVar("color-muted", vars.$color-muted);
+    @include h.defineVar("color-emphasis", vars.$color-emphasis);
+
+    @include h.defineVar("border-color", vars.$border-color);
+    @include h.defineVar("border-color-inverse", vars.$border-color-inverse);
+    @include h.defineVar("border-color-subtle", vars.$border-color-subtle);
+    @include h.defineVar("border-color-muted", vars.$border-color-muted);
+    @include h.defineVar("border-color-emphasis", vars.$border-color-emphasis);
+
+    @include h.defineVar(
+        "hover-background-color",
+        vars.$hover-background-color
+    );
+    @include h.defineVar(
+        "hover-background-color-inverse",
+        vars.$hover-background-color-inverse
+    );
+    @include h.defineVar(
+        "hover-background-color-subtle",
+        vars.$hover-background-color-subtle
+    );
+    @include h.defineVar(
+        "hover-background-color-muted",
+        vars.$hover-background-color-muted
+    );
+    @include h.defineVar(
+        "hover-background-color-emphasis",
+        vars.$hover-background-color-emphasis
+    );
+
+    @include h.defineVar("hover-color", vars.$hover-color);
+    @include h.defineVar("hover-color-inverse", vars.$hover-color-inverse);
+    @include h.defineVar("hover-color-subtle", vars.$hover-color-subtle);
+    @include h.defineVar("hover-color-muted", vars.$hover-color-muted);
+    @include h.defineVar("hover-color-emphasis", vars.$hover-color-emphasis);
+
+    @include h.defineVar("hover-border-color", vars.$hover-border-color);
+    @include h.defineVar(
+        "hover-border-color-inverse",
+        vars.$hover-border-color-inverse
+    );
+    @include h.defineVar(
+        "hover-border-color-subtle",
+        vars.$hover-border-color-subtle
+    );
+    @include h.defineVar(
+        "hover-border-color-muted",
+        vars.$hover-border-color-muted
+    );
+    @include h.defineVar(
+        "hover-border-color-emphasis",
+        vars.$hover-border-color-emphasis
+    );
+}
+    
+
 // Define dark theme
 @mixin darkTheme {
     // define dark color variables
@@ -297,14 +395,17 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
     );
 }
 
-// Apply dark theme
-@media (prefers-color-scheme: dark) {
-    #{$host-selector} {
-        @include darkTheme;
-    }
+// Apply light and dark themes
+@media (prefers-color-scheme: light) {
+    #{$host-selector} { @include lightTheme; }
 }
 
-[data-theme="dark"],
-.theme-dark {
-    @include darkTheme;
+@media (prefers-color-scheme: dark) {
+    #{$host-selector} { @include darkTheme; }
 }
+
+[data-theme="light"],
+.theme-light { @include lightTheme; }
+
+[data-theme="dark"],
+.theme-dark { @include darkTheme; }
