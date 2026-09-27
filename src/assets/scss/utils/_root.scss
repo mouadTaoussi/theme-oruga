@@ -9,6 +9,7 @@
 @use "./helpers" as h;
 
 $host-selector: if(vars.$enable-host, ":root, :host", ":root");
+
 #{$host-selector} {
     // define color variables
     @each $name, $pair in vars.$colors {
