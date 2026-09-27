@@ -269,7 +269,6 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
         vars.$hover-border-color-emphasis
     );
 }
-    
 
 // Define dark theme
 @mixin darkTheme {
@@ -397,15 +396,23 @@ $host-selector: if(vars.$enable-host, ":root, :host", ":root");
 
 // Apply light and dark themes
 @media (prefers-color-scheme: light) {
-    #{$host-selector} { @include lightTheme; }
+    #{$host-selector} {
+        @include lightTheme;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-    #{$host-selector} { @include darkTheme; }
+    #{$host-selector} {
+        @include darkTheme;
+    }
 }
 
 [data-theme="light"],
-.theme-light { @include lightTheme; }
+.theme-light {
+    @include lightTheme;
+}
 
 [data-theme="dark"],
-.theme-dark { @include darkTheme; }
+.theme-dark {
+    @include darkTheme;
+}
